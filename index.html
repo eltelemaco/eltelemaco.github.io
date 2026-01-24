@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luis Salcedo - DevOps Engineer specializing in cloud infrastructure, Kubernetes, and automation">
+    <meta name="keywords" content="DevOps, Cloud, Kubernetes, Terraform, AWS, Azure, CI/CD, Automation">
+    <meta name="author" content="Luis Salcedo">
+    <title>Luis Salcedo | DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">&lt;LS/&gt;</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Luis Salcedo</h1>
+            <div class="hero-title">
+                <span class="typing-text" id="typing"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Building reliable infrastructure, automating everything, and bridging the gap between development and operations.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="https://github.com/eltelemaco" target="_blank" rel="noopener" class="btn btn-outline">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>DevOps Engineer</strong> with over 15 years of experience in IT, 
+                        passionate about cloud infrastructure, automation, and building scalable systems 
+                        that empower development teams.
+                    </p>
+                    <p>
+                        My journey started with a Computer Systems Engineering degree and has evolved 
+                        through various industries, from software development to enterprise IT consulting. 
+                        Today, I focus on infrastructure as code, Kubernetes orchestration, and fostering 
+                        DevOps culture within organizations.
+                    </p>
+                    <p>
+                        I believe in continuous learning and staying ahead of the curve. Whether it's 
+                        exploring MLOps, DataOps, or the latest in cloud-native technologies, I'm always 
+                        looking for ways to improve and innovate.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Toolset</h2>
+            <div class="skills-grid">
+                <!-- Cloud & Infrastructure -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">☁️</div>
+                        <h3>Cloud & Infrastructure</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Hetzner Cloud</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Cloud-Init</span>
+                        <span class="skill-tag">Infrastructure as Code</span>
+                    </div>
+                </div>
+
+                <!-- Containers & Orchestration -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🐳</div>
+                        <h3>Containers & Orchestration</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">K3s</span>
+                        <span class="skill-tag">Container Security</span>
+                        <span class="skill-tag">Helm</span>
+                    </div>
+                </div>
+
+                <!-- CI/CD & Automation -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔄</div>
+                        <h3>CI/CD & Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">GitOps</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">HCP Terraform</span>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Observability -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">📊</div>
+                        <h3>Monitoring & Observability</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Splunk</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Log Management</span>
+                    </div>
+                </div>
+
+                <!-- Programming & Scripting -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3>Programming & Scripting</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">PowerShell</span>
+                        <span class="skill-tag">YAML</span>
+                        <span class="skill-tag">HCL</span>
+                    </div>
+                </div>
+
+                <!-- Security & Best Practices -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔐</div>
+                        <h3>Security & Best Practices</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">ITIL</span>
+                        <span class="skill-tag">DevSecOps</span>
+                        <span class="skill-tag">Firewall Management</span>
+                        <span class="skill-tag">SSH Hardening</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Industries I've worked in throughout my career</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>IT Consulting & Professional Services</h3>
+                        <p class="timeline-period">Current</p>
+                        <p>Delivering DevOps solutions and cloud infrastructure expertise to enterprise clients. Leading automation initiatives and implementing infrastructure as code practices.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Technology Services</h3>
+                        <p class="timeline-period">Previous</p>
+                        <p>Developed monitoring solutions, implemented CI/CD pipelines, and managed large-scale cloud deployments for technology firms.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Development</h3>
+                        <p class="timeline-period">Previous</p>
+                        <p>Built development environments, automated testing infrastructure, and supported dev teams with tooling and platform engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Academic & Research</h3>
+                        <p class="timeline-period">Early Career</p>
+                        <p>Published research on robotics and educational prototypes. Gained foundational skills in systems engineering and programming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Education</h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Splunk Certified Admin</h3>
+                    <p class="cert-issuer">Splunk</p>
+                    <p class="cert-year">2016</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📋</div>
+                    <h3>ITIL Foundations V3</h3>
+                    <p class="cert-issuer">APMG International</p>
+                    <p class="cert-year">2013</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🤖</div>
+                    <h3>Generative AI Essentials</h3>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-year">2025</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📚</div>
+                    <h3>AI Organization Upskilling</h3>
+                    <p class="cert-issuer">LinkedIn Learning</p>
+                    <p class="cert-year">2025</p>
+                </div>
+            </div>
+            
+            <div class="education-section">
+                <h3 class="subsection-title">Education & Training</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h4>Computer Systems Engineering</h4>
+                        <p>Bachelor's Degree • 2004 - 2009</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Data Science & Machine Learning</h4>
+                        <p>Professional Training</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Cybersecurity & BigData</h4>
+                        <p>International Program • Barcelona, Spain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">I'm always open to discussing DevOps, cloud architecture, or new opportunities</p>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/salcedol" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-handle">@salcedol</span>
+                </a>
+                <a href="https://github.com/eltelemaco" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-handle">@eltelemaco</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Luis Salcedo. Built with passion for DevOps.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
