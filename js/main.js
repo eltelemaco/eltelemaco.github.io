@@ -116,17 +116,53 @@ function animateStats() {
 // ===== Navbar Background on Scroll =====
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
+const backToTop = document.getElementById('backToTop');
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
+    // Navbar background
     if (currentScroll > 100) {
         navbar.style.background = 'rgba(10, 10, 15, 0.95)';
     } else {
         navbar.style.background = 'rgba(10, 10, 15, 0.8)';
     }
 
+    // Back to top button visibility
+    if (currentScroll > 500) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+
+    // Active nav link based on scroll position
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+
     lastScroll = currentScroll;
+});
+
+// Back to top click handler
+backToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
 
 // ===== Smooth Scroll for Safari =====
