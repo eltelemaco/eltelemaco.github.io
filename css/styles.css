@@ -1074,6 +1074,8 @@ img {
 .skill-category:nth-child(4) { animation-delay: 300ms; }
 .skill-category:nth-child(5) { animation-delay: 400ms; }
 .skill-category:nth-child(6) { animation-delay: 500ms; }
+.skill-category:nth-child(7) { animation-delay: 600ms; }
+.skill-category:nth-child(8) { animation-delay: 700ms; }
 
 .cert-card:nth-child(1) { animation-delay: 0ms; }
 .cert-card:nth-child(2) { animation-delay: 100ms; }

@@ -20,11 +20,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // ===== Typing Effect =====
 const typingElement = document.getElementById('typing');
 const phrases = [
-    'DevOps Engineer',
-    'Cloud Architect',
-    'Automation Expert',
-    'Infrastructure as Code Specialist',
-    'Kubernetes Enthusiast'
+    'Senior DevOps Engineer',
+    'MLOps Forward Deployed Engineer',
+    'Site Reliability Engineer',
+    'Cloud Infrastructure Architect',
+    'Kubernetes & AI Automation Specialist'
 ];
 
 let phraseIndex = 0;
