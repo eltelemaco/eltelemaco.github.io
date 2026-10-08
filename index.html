@@ -1,547 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luis Antonio Reynoso - Senior DevOps Engineer & MLOps Forward Deployed Engineer specializing in cloud infrastructure, Kubernetes, and AI/ML automation">
-    <meta name="keywords" content="DevOps, MLOps, Cloud, Kubernetes, Terraform, AWS, Azure, GCP, CI/CD, Automation, SRE, AI Agents">
-    <meta name="author" content="Luis Antonio Reynoso">
-    <title>Luis Antonio Reynoso | DevOps Engineer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis Antonio Reynoso | Lead AI Engineer</title>
+    <meta name="description" content="Luis Antonio Reynoso, Lead AI Engineer and Forward Deployed Engineer in Denver, Colorado. Production LLM agents, RAG systems, and ML platforms.">
+    <meta name="author" content="Luis Antonio Reynoso Salcedo">
+    <link rel="canonical" href="https://www.telemaco.com.mx/">
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="profile">
     <meta property="og:url" content="https://www.telemaco.com.mx/">
-    <meta property="og:title" content="Luis Antonio Reynoso | DevOps Engineer">
-    <meta property="og:description" content="Senior DevOps Engineer & MLOps Forward Deployed Engineer specializing in cloud infrastructure, Kubernetes, and AI/ML automation.">
-    <meta property="og:image" content="https://www.telemaco.com.mx/assets/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:title" content="Luis Antonio Reynoso | Lead AI Engineer">
+    <meta property="og:description" content="Production LLM agents, RAG systems, and ML platforms. Denver, Colorado.">
+    <meta property="og:image" content="https://www.telemaco.com.mx/assets/headshot.jpg">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Luis Antonio Reynoso | DevOps Engineer">
-    <meta name="twitter:description" content="Senior DevOps Engineer & MLOps Forward Deployed Engineer specializing in cloud infrastructure, Kubernetes, and AI/ML automation.">
-    <meta name="twitter:image" content="https://www.telemaco.com.mx/assets/og-image.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=20261008f">
 </head>
-<body>
+<body id="top">
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">&lt;LR/&gt;</a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#contact" class="nav-link">Contact</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">Luis Antonio Reynoso</a>
             </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="assets/Luis-Antonio-Reynoso-Resume.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Résumé</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg">
-            <div class="hero-orb hero-orb-1"></div>
-            <div class="hero-orb hero-orb-2"></div>
-            <div class="hero-orb hero-orb-3"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                <span>Open to New Opportunities</span>
-            </div>
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">Luis Antonio Reynoso</h1>
-            <div class="hero-title">
-                <span class="typing-text" id="typing"></span>
-                <span class="cursor">|</span>
-            </div>
-            <p class="hero-description">
-                Architecting reliable infrastructure, automating machine learning workflows, and bridging the gap between development, operations, and AI.
-            </p>
-            <div class="hero-location">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                </svg>
-                <span>Denver, Colorado</span>
-            </div>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                        <polyline points="22,6 12,13 2,6"/>
-                    </svg>
-                    Get In Touch
-                </a>
-                <a href="https://github.com/eltelemaco" target="_blank" rel="noopener" class="btn btn-outline">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>
-                <a href="https://linkedin.com/in/salcedol" target="_blank" rel="noopener" class="btn btn-outline">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about" id="about">
+    <!-- Header -->
+    <div class="jumbotron">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        I'm a <strong>Senior DevOps Engineer</strong> with over 15 years of experience
-                        architecting, automating, and optimizing mission-critical infrastructure across
-                        AWS, Azure, and GCP for Fortune 500 enterprises.
+            <div class="row">
+                <div class="col-sm-4 col-md-3 text-center">
+                    <img src="assets/headshot.jpg" class="img-circle profile-photo" width="200" height="200" alt="Luis Antonio Reynoso">
+                </div>
+                <div class="col-sm-8 col-md-9">
+                    <h1>Luis Antonio Reynoso</h1>
+                    <p class="lead">Lead AI Engineer &amp; Forward Deployed Engineer</p>
+                    <p class="intro">
+                        I build LLM agents, RAG systems, and machine learning platforms for enterprise teams, with over
+                        15 years of experience running production infrastructure on AWS, Azure, and GCP.
                     </p>
                     <p>
-                        My journey started with a Computer Systems Engineering degree and has evolved
-                        through various industries, from IT outsourcing and enterprise consulting to
-                        automotive, energy, and financial services. Today, I focus on infrastructure as
-                        code, Kubernetes orchestration, and SRE practices at scale.
+                        <a class="btn btn-primary btn-lg" href="assets/Luis-Antonio-Reynoso-Resume.pdf" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download Résumé</a>
+                        <a class="btn btn-default btn-lg" href="#contact" role="button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact Me</a>
+                    </p>
+                    <p class="text-muted location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Denver, Colorado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- About -->
+        <section id="about">
+            <div class="page-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        I am an AI Engineer and Forward Deployed Engineer with more than fifteen years of experience
+                        building production systems for Fortune 500 companies.
                     </p>
                     <p>
-                        Most recently, I've been working as a Forward Deployed Engineer leading MLOps
-                        initiatives &mdash; architecting agentic chatbots and coding agents with Amazon
-                        SageMaker, Bedrock, Vertex AI, Azure AI Foundry, and Claude Code to automate
-                        machine learning deployment workflows for cross-functional DevOps and ML teams.
+                        I design and ship tool-using LLM agents, retrieval-augmented (RAG) assistants, and multi-model AI
+                        platforms with Claude Code, MCP, LiteLLM, Amazon Bedrock, SageMaker, Vertex AI, and Azure AI
+                        Foundry. I also build the evaluation, guardrails, and monitoring that keep them reliable in
+                        production. I work directly with customers to turn their workflows into deployed AI solutions.
                     </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <span class="stat-number" data-target="15">0</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number" data-target="4">0</span>
-                        <span class="stat-label">Certifications</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number" data-target="2">0</span>
-                        <span class="stat-label">Languages</span>
+                    <div class="alert alert-success" role="alert">
+                        <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+                        <strong>Available:</strong> open to Lead AI Engineer and Forward Deployed Engineer roles.
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Toolset</h2>
-            <div class="skills-grid">
-                <!-- Cloud & Infrastructure -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">☁️</div>
-                        <h3>Cloud & Infrastructure</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">GCP</span>
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">CloudFormation</span>
-                        <span class="skill-tag">Bicep</span>
-                        <span class="skill-tag">Hetzner Cloud</span>
-                        <span class="skill-tag">Infrastructure as Code</span>
-                    </div>
-                </div>
-
-                <!-- Containers & Orchestration -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🐳</div>
-                        <h3>Containers & Orchestration</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">EKS / AKS / GKE</span>
-                        <span class="skill-tag">K3s</span>
-                        <span class="skill-tag">Helm</span>
-                        <span class="skill-tag">Container Security</span>
-                    </div>
-                </div>
-
-                <!-- CI/CD & Automation -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🔄</div>
-                        <h3>CI/CD & Automation</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Azure DevOps</span>
-                        <span class="skill-tag">GitLab CI/CD</span>
-                        <span class="skill-tag">CircleCI</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">GitOps</span>
-                    </div>
-                </div>
-
-                <!-- AI & MLOps -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🤖</div>
-                        <h3>AI & MLOps</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Amazon Bedrock</span>
-                        <span class="skill-tag">Amazon SageMaker</span>
-                        <span class="skill-tag">Vertex AI</span>
-                        <span class="skill-tag">Azure AI Foundry</span>
-                        <span class="skill-tag">Claude Code</span>
-                        <span class="skill-tag">MCP</span>
-                        <span class="skill-tag">LLMOps</span>
-                        <span class="skill-tag">Agentic Workflows</span>
-                    </div>
-                </div>
-
-                <!-- Data & Analytics -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">📈</div>
-                        <h3>Data & Analytics</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Apache Spark</span>
-                        <span class="skill-tag">Databricks</span>
-                        <span class="skill-tag">Snowflake</span>
-                        <span class="skill-tag">Apache Airflow</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
-
-                <!-- Monitoring & Observability -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">📊</div>
-                        <h3>Monitoring & Observability</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Splunk</span>
-                        <span class="skill-tag">Dynatrace</span>
-                        <span class="skill-tag">Datadog</span>
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">OpenTelemetry</span>
-                        <span class="skill-tag">PagerDuty</span>
-                    </div>
-                </div>
-
-                <!-- Programming & Scripting -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">💻</div>
-                        <h3>Programming & Scripting</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Go</span>
-                        <span class="skill-tag">Bash</span>
-                        <span class="skill-tag">PowerShell</span>
-                        <span class="skill-tag">YAML</span>
-                        <span class="skill-tag">HCL</span>
-                    </div>
-                </div>
-
-                <!-- Security & SRE -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🔐</div>
-                        <h3>Security & SRE</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Cybersecurity</span>
-                        <span class="skill-tag">ITIL</span>
-                        <span class="skill-tag">DevSecOps</span>
-                        <span class="skill-tag">SLO/SLI Definition</span>
-                        <span class="skill-tag">Incident Response</span>
-                        <span class="skill-tag">SSH Hardening</span>
-                    </div>
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="badge">15+</span> Years of experience</li>
+                        <li class="list-group-item"><span class="badge">3,000+</span> Microservices managed</li>
+                        <li class="list-group-item"><span class="badge">2M+</span> Vehicles served by AI</li>
+                        <li class="list-group-item"><span class="badge">99.99%</span> Platform uptime</li>
+                        <li class="list-group-item"><span class="badge">$1.2M</span> Annual cloud savings</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section class="section experience" id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <p class="section-subtitle">15+ years of building and scaling infrastructure</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior DevOps MLOps Data Platform Engineer</h3>
-                            <span class="timeline-company">Movate / KKR</span>
+        <!-- Projects -->
+        <section id="projects">
+            <div class="page-header">
+                <h2>Projects <small>Selected work</small></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Agentic Engineering Platform</h3>
                         </div>
-                        <p class="timeline-period">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                            Boston, MA | March 2026 - August 2026
-                        </p>
-                        <p>Served as an AI Forward Deployed Engineer, architecting agentic coding and chatbot frameworks with Claude Code and MCP across Bedrock, Vertex AI, and Azure AI Foundry. Hardened Terraform and IAM architecture for high-security data services and built schema automation pipelines for Redshift with formal change management.</p>
-                        <div class="timeline-tags">
-                            <span>MLOps</span>
-                            <span>Claude Code</span>
-                            <span>Terraform</span>
-                            <span>AWS</span>
+                        <div class="panel-body">
+                            <p class="text-muted small">KKR (via Movate) &middot; Boston, MA &middot; 2026</p>
+                            <p>Built tool-using LLM agents on Claude Code with custom MCP servers for GitHub, Terraform, AWS, and observability. The agents fix CI/CD failures, propose infrastructure changes, and write runbooks. Every change is approved by a person through a pull request.</p>
+                            <p>
+                                <span class="label label-primary">LLM Agents</span>
+                                <span class="label label-primary">MCP</span>
+                                <span class="label label-primary">LiteLLM</span>
+                                <span class="label label-primary">Bedrock</span>
+                                <span class="label label-primary">RAG</span>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior Release DevOps Engineer / SRE</h3>
-                            <span class="timeline-company">EPAM Systems</span>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">&ldquo;Hey Mercedes&rdquo; Speech AI Migration</h3>
                         </div>
-                        <p class="timeline-period">Houston, TX | May 2023 - October 2025</p>
-                        <p>Designed multi-cloud infrastructure serving 2,500+ microservices across AWS and Azure supporting 50M+ daily transactions at 99.99% uptime. Cut deployment time 82%, reduced cloud costs by $1.2M annually, and led post-mortem analysis across 200+ incidents.</p>
-                        <div class="timeline-tags">
-                            <span>Kubernetes</span>
-                            <span>Terraform</span>
-                            <span>AWS</span>
-                            <span>Azure</span>
-                            <span>FinOps</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior DevOps Engineer / Release Engineer</h3>
-                            <span class="timeline-company">Tecnologia Corp</span>
-                        </div>
-                        <p class="timeline-period">Houston, TX | November 2021 - May 2023</p>
-                        <p>Architected AKS infrastructure managing 3,000+ containerized applications across 5 regions. Built a proprietary provisioning toolset cutting infrastructure request fulfillment from 3 days to 2 hours, and led a DevOps team of 8 while mentoring 12+ engineers.</p>
-                        <div class="timeline-tags">
-                            <span>Kubernetes</span>
-                            <span>Azure</span>
-                            <span>Helm</span>
-                            <span>Leadership</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Release Engineer / DevOps SRE Tech Lead</h3>
-                            <span class="timeline-company">Luxoft (DXC Technology)</span>
-                        </div>
-                        <p class="timeline-period">San Francisco, CA | June 2017 - November 2021</p>
-                        <p>Managed continuous deployment of 4,000+ microservices across travel, automotive, healthcare, and financial services. Architected an enterprise Splunk stack processing 10TB+ logs daily and cut MTTR from 120+ minutes to 18 minutes.</p>
-                        <div class="timeline-tags">
-                            <span>Splunk</span>
-                            <span>Dynatrace</span>
-                            <span>CI/CD</span>
-                            <span>SRE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Earlier Career</h3>
-                            <span class="timeline-company">Accenture, Softtek, TATA TCS, City Council IT</span>
-                        </div>
-                        <p class="timeline-period">Mexico | May 2009 - June 2017</p>
-                        <p>Progressed from Systems and Server Administrator to DevOps Engineer and SRE Tech Lead across enterprise consulting, IT outsourcing, and public sector roles, building the systems administration and automation foundation for a 15+ year infrastructure career.</p>
-                        <div class="timeline-tags">
-                            <span>Linux</span>
-                            <span>Systems Administration</span>
-                            <span>Automation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Research & Early Career</h3>
-                            <span class="timeline-company">Academia</span>
-                        </div>
-                        <p class="timeline-period">2009 - 2010</p>
-                        <p>Co-authored research on "Robotic Arm D-Tran RT3200 as educational prototype" presented at the First International Congress of Transdisciplinarity. Built foundational skills in systems engineering.</p>
-                        <div class="timeline-tags">
-                            <span>Research</span>
-                            <span>Robotics</span>
-                            <span>Systems Engineering</span>
+                        <div class="panel-body">
+                            <p class="text-muted small">Daimler (via Luxoft) &middot; Germany &middot; 2020</p>
+                            <p>Led the migration of 20+ speech-recognition AI services to Azure Kubernetes Service with zero downtime, serving 2M+ vehicles in real time. Achieved 85% faster deployments, 40% lower latency, and 99.98% uptime.</p>
+                            <p>
+                                <span class="label label-primary">Speech AI</span>
+                                <span class="label label-primary">Azure</span>
+                                <span class="label label-primary">AKS</span>
+                                <span class="label label-primary">Edge Hardware</span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section class="section certifications" id="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications & Education</h2>
-            <div class="certs-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">🎓</div>
-                    <h3>Splunk Certified Admin</h3>
-                    <p class="cert-issuer">Splunk</p>
-                    <p class="cert-year">2016</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">📋</div>
-                    <h3>ITIL Foundations V3</h3>
-                    <p class="cert-issuer">APMG International</p>
-                    <p class="cert-year">2013</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">🤖</div>
-                    <h3>Generative AI Essentials</h3>
-                    <p class="cert-issuer">Microsoft</p>
-                    <p class="cert-year">2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">📚</div>
-                    <h3>AI Organization Upskilling</h3>
-                    <p class="cert-issuer">LinkedIn Learning</p>
-                    <p class="cert-year">2025</p>
-                </div>
-            </div>
-            
-            <div class="education-section">
-                <h3 class="subsection-title">Education & Training</h3>
-                <div class="education-grid">
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
-                            </svg>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">LLM-Assisted Incident Response</h3>
                         </div>
-                        <h4>Computer Systems Engineering</h4>
-                        <p class="education-school">Instituto Tecnologico de Puerto Vallarta</p>
-                        <p class="education-period">2004 - 2009</p>
-                    </div>
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
-                            </svg>
+                        <div class="panel-body">
+                            <p class="text-muted small">EPAM Systems &middot; Houston, TX &middot; 2023&ndash;2025</p>
+                            <p>Built an LLM workflow that summarizes alerts from Splunk and Dynatrace, finds related signals, and drafts root-cause analyses across 100+ Kubernetes clusters. Cut resolution time from 90 to 15 minutes and repeat incidents by 60%.</p>
+                            <p>
+                                <span class="label label-primary">LLMs</span>
+                                <span class="label label-primary">AIOps</span>
+                                <span class="label label-primary">Splunk</span>
+                                <span class="label label-primary">Kubernetes</span>
+                            </p>
                         </div>
-                        <h4>Data Science Oriented Programming & Machine Learning</h4>
-                        <p class="education-school">Guadalajara, Mexico</p>
-                        <p class="education-period">2018</p>
                     </div>
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
-                            </svg>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">AWS Landing Zone for ML Forecasting</h3>
                         </div>
-                        <h4>International Program in Cybersecurity & Big Data</h4>
-                        <p class="education-school">Barcelona, Spain</p>
-                        <p class="education-period">2019</p>
+                        <div class="panel-body">
+                            <p class="text-muted small">Global renewable energy company</p>
+                            <p>Designed an AWS landing zone and migrated 15+ ETL pipelines along with the energy-forecasting and machine learning applications. Delivered 300% burst capacity, 45% lower cost, and 60% faster queries.</p>
+                            <p>
+                                <span class="label label-primary">AWS</span>
+                                <span class="label label-primary">Terraform</span>
+                                <span class="label label-primary">ETL</span>
+                                <span class="label label-primary">ML</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">I'm always open to discussing DevOps, cloud architecture, or new opportunities</p>
-            <div class="contact-links">
-                <a href="https://linkedin.com/in/salcedol" target="_blank" rel="noopener" class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </div>
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-handle">@salcedol</span>
-                </a>
-                <a href="https://github.com/eltelemaco" target="_blank" rel="noopener" class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </div>
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-handle">@eltelemaco</span>
-                </a>
-                <a href="assets/Luis-Antonio-Reynoso-Resume.pdf" download class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 3v12"/>
-                            <polyline points="7,10 12,15 17,10"/>
-                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
-                        </svg>
-                    </div>
-                    <span class="contact-label">Resume</span>
-                    <span class="contact-handle">Download PDF</span>
-                </a>
+        <!-- Experience -->
+        <section id="experience">
+            <div class="page-header">
+                <h2>Experience</h2>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <a href="#" class="footer-logo">&lt;LR/&gt;</a>
-                <p>&copy; 2026 Luis Antonio Reynoso. Built with passion for DevOps.</p>
-                <div class="footer-links">
-                    <a href="https://linkedin.com/in/salcedol" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/eltelemaco" target="_blank" rel="noopener" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
+            <div class="job">
+                <h4>Lead AI Engineer, LLM Agents &amp; Platform <span class="pull-right text-muted job-date">Mar 2026 &ndash; Aug 2026</span></h4>
+                <p class="text-muted">Movate / KKR &middot; Boston, MA &middot; <em>Official title: Senior DevOps MLOps Data Platform Engineer</em></p>
+                <ul>
+                    <li>Designed and built MCP-based LLM agents and a LiteLLM multi-model gateway.</li>
+                    <li>Deployed production inference on Bedrock, Vertex AI, and Azure AI Foundry for forecasting, risk, and fraud features.</li>
+                    <li>Set up LLM evaluation, tracing, and sandboxed, least-privilege execution for agents.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="job">
+                <h4>Senior AI / MLOps Engineer <span class="pull-right text-muted job-date">May 2023 &ndash; Oct 2025</span></h4>
+                <p class="text-muted">EPAM Systems &middot; Houston, TX &middot; <em>Official title: Senior Release DevOps Engineer / SRE</em></p>
+                <ul>
+                    <li>Ran 100+ Kubernetes clusters hosting 2,500+ services and model-serving workloads at 99.99% uptime.</li>
+                    <li>Built CI/CD for models and services, cutting deployment time from 25 to 4 minutes.</li>
+                    <li>Saved $1.2M per year on compute; led a 1,800-server migration to AWS with zero data loss.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="job">
+                <h4>Senior DevOps Engineer / Release Engineer <span class="pull-right text-muted job-date">Nov 2021 &ndash; May 2023</span></h4>
+                <p class="text-muted">Tecnologia Corp &middot; Houston, TX</p>
+                <ul>
+                    <li>Architected AKS infrastructure for 3,000+ applications across five regions.</li>
+                    <li>Led a team of 8 engineers and mentored 12+ junior engineers.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="job">
+                <h4>Release Engineer / DevOps SRE Tech Lead <span class="pull-right text-muted job-date">Jun 2017 &ndash; Nov 2021</span></h4>
+                <p class="text-muted">Luxoft (DXC Technology) &middot; San Francisco, CA</p>
+                <ul>
+                    <li>Managed continuous deployment of 4,000+ microservices with a 99.97% success rate.</li>
+                    <li>Architected an enterprise Splunk platform processing 10TB+ of logs per day.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="job">
+                <h4>Earlier Positions <span class="pull-right text-muted job-date">2009 &ndash; 2017</span></h4>
+                <p class="text-muted">Accenture &middot; Softtek &middot; Tata Consultancy Services &middot; City Council IT Governance, Jalisco</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <div class="page-header">
+                <h2>Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h4><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> AI Engineering</h4>
+                    <ul class="list-unstyled skill-list">
+                        <li>LLM Agents &amp; Tool Calling</li>
+                        <li>MCP Servers, Claude Code</li>
+                        <li>RAG, Embeddings, Vector Search</li>
+                        <li>Prompt Engineering</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> LLM Platforms</h4>
+                    <ul class="list-unstyled skill-list">
+                        <li>Amazon Bedrock, SageMaker</li>
+                        <li>Google Vertex AI</li>
+                        <li>Azure AI Foundry, Azure OpenAI</li>
+                        <li>LiteLLM</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> MLOps</h4>
+                    <ul class="list-unstyled skill-list">
+                        <li>LLM Evaluation &amp; Tracing</li>
+                        <li>Guardrails &amp; Human-in-the-Loop</li>
+                        <li>Model Serving &amp; Monitoring</li>
+                        <li>CI/CD for ML</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Cloud &amp; Infrastructure</h4>
+                    <ul class="list-unstyled skill-list">
+                        <li>AWS, Azure, GCP</li>
+                        <li>Kubernetes, Docker, Helm</li>
+                        <li>Terraform, Ansible</li>
+                        <li>GitHub Actions, Jenkins</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Data</h4>
+                    <ul class="list-unstyled skill-list">
+                        <li>Databricks, Spark</li>
+                        <li>Snowflake, Redshift</li>
+                        <li>Airflow, Dagster</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h4><span class="glyphicon glyphicon-console" aria-hidden="true"></span> Languages</h4>
+                    <ul class="list-unstyled skill-list">
+                        <li>Python, Go</li>
+                        <li>Bash, PowerShell</li>
+                        <li>SQL</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18 15 12 9 6 15"/>
-        </svg>
-    </button>
+            <h3 class="sub-heading">Education &amp; Certifications</h3>
+            <table class="table table-striped table-condensed">
+                <tbody>
+                    <tr><td><strong>B.S. Computer Systems Engineering</strong></td><td>Instituto Tecnológico Superior de Puerto Vallarta</td><td class="text-right">2009</td></tr>
+                    <tr><td><strong>International Program in Cybersecurity &amp; Big Data</strong></td><td>Barcelona, Spain</td><td class="text-right">2019</td></tr>
+                    <tr><td><strong>Data Science Programming &amp; Machine Learning</strong></td><td>Guadalajara, Mexico</td><td class="text-right">2018</td></tr>
+                    <tr><td><strong>Splunk Certified Administrator</strong></td><td>Splunk</td><td class="text-right"></td></tr>
+                    <tr><td><strong>ITIL Foundations V3</strong></td><td>Certified Professional</td><td class="text-right"></td></tr>
+                </tbody>
+            </table>
+        </section>
 
-    <script src="js/main.js"></script>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="page-header">
+                <h2>Contact</h2>
+            </div>
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:reynosoantonioluis@gmail.com">reynosoantonioluis@gmail.com</a></p>
+                        <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Denver, Colorado</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <a href="https://linkedin.com/in/areynoso" target="_blank" rel="noopener">linkedin.com/in/areynoso</a></p>
+                        <p><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> <a href="https://github.com/eltelemaco" target="_blank" rel="noopener">github.com/eltelemaco</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <footer>
+            <p class="text-muted">&copy; 2026 Luis Antonio Reynoso Salcedo <span class="pull-right"><a href="#top">Back to top</a></span></p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // Close the mobile menu after choosing a section
+        $('#main-nav a').on('click', function () {
+            if ($('.navbar-toggle').is(':visible')) { $('#main-nav').collapse('hide'); }
+        });
+    </script>
 </body>
 </html>
