@@ -53,15 +53,24 @@ section[id]::before {
     margin-top: 20px;
 }
 
-.panel {
-    min-height: 240px;
+@media (min-width: 992px) {
+    .panel {
+        min-height: 240px;
+    }
 }
 .panel-title {
     font-weight: bold;
 }
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 16px 0 0;
+}
 .label {
     display: inline-block;
-    margin-bottom: 4px;
+    padding: 5px 9px;
+    line-height: 1.2;
     font-weight: normal;
     font-size: 85%;
 }
